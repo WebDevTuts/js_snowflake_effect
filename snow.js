@@ -4,4 +4,10 @@ window.onload = function() {
   var canvas = document.getElementBy("sky");
   var ctx = canvas.getContext("2d");
 
+  // set canvas dimension to window height and width
+  var W = window.innerWidth;
+  var H = window.innerHeight;
+  canvas.width = W;
+  canvas.height = H;
+
 }
