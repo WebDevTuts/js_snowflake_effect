@@ -1,7 +1,7 @@
 window.onload = function() {
 
   // get the canvas and context and store in vars
-  var canvas = document.getElementBy("sky");
+  var canvas = document.getElementById("sky");
   var ctx = canvas.getContext("2d");
 
   // set canvas dimension to window height and width
@@ -63,4 +63,6 @@ window.onload = function() {
       }
     }
   }
+
+  setInterval(drawFlakes, 25);
 }
