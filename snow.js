@@ -10,4 +10,7 @@ window.onload = function() {
   canvas.width = W;
   canvas.height = H;
 
+  // generate the snowflakes and apply attributes
+  var mf = 100;   // max flakes
+  var flakes = [];
 }
