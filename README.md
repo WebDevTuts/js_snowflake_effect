@@ -2,4 +2,6 @@
 
 Yo ninjas, in this JavaScript tutorial, I'll show you how to make a snowy background effect using the HTML5 canvas element and some JavaScript. The canvas element can be used to make some cool drawings and animations via the JavaScript API, and is pretty simple when you get the hang of it!
 
-[View demo site here.](https://webdevtuts.github.io/js_snow_effect/)
+[View demo site here.](https://webdevtuts.github.io/js_snowflake_effect/)
+
+![Preview](screenshot.jpg)
