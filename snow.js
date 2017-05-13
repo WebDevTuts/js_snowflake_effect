@@ -37,4 +37,30 @@ window.onload = function() {
     ctx.fill();
     moveFlakes();
   }
+
+  // animate the flakes
+  var angle = 0;
+
+  function moveFlakes() {
+    angle += 0.01;
+
+    for ( var i = 0; i < mf; i++ ) {
+      // store current flake
+      var f = flakes[i];
+
+      // update X and Y coordinates of each snowflake
+      f.y += Math.pow(f.d, 2) + 1;
+      f.x += Math.sin(angle) * 2;
+
+      // if the snowflake reaches the bottom, send a new one to the top
+      if ( f.y > H ) {
+        flakes[i] = {
+          x: Math.random() * W,
+          y: 0,
+          r: f.r,
+          d: f.d
+        };
+      }
+    }
+  }
 }
